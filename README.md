@@ -4,6 +4,7 @@
 Esse endpoint é responsável por retornar a listagem de todos os games cadastrados na BD.
 #### Parametros
 Nenhum
+
 #### Respostas
 ##### OK! 200
 Caso essa resposta aconteça você vai receber a listagem de todos os games.
@@ -31,5 +32,15 @@ Exemplo de  resposta:
         "year": 2010
     }
 ]
+
 ##### Falha na autenticação! 401
 Caso essa resposta aconteça, isso significa que aconteceu alguma falha durante o processo de autenticação da requisição. Motivos: Token inválido, Token expirado
+
+
+Exemplo de resposta
+
+```
+{
+    "err": "Token invalido!"
+}
+
